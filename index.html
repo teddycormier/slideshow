@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Black Jaguar</title>
+
+	<link rel="shortcut icon" href="images/logoimg.png">
+
+	<link rel="stylesheet" href="styles/normalize.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="themes/light/light.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="themes/dark/dark.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="styles/nivo-slider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="styles/style.css" type="text/css" media="screen" />
+
+</head>
+
+<body>
+
+	<header>
+		<h1 style="margin-top:15px;">The Black Jaguar</h1>
+		<img src="images/logoimg.png">
+	</header>
+
+	<div id="wrapper">
+
+		<div class="slider-wrapper theme-default">
+
+			<div id="slider" class="nivoSlider">
+				<img src="images/blackjaguar1.png" data-thumb="images/blackjaguar1.png" alt="" title="#img1">
+				<img src="images/blackjaguar2.png" data-thumb="images/blackjaguar2.png" alt="" title="#img2">
+				<img src="images/blackjaguar3.png" data-thumb="images/blackjaguar3.png" alt="" title="#img3">
+				<img src="images/blackjaguar4.png" data-thumb="images/blackjaguar4.png" alt="" title="#img4">
+				<img src="images/blackjaguar5.png" data-thumb="images/blackjaguar5.png" alt="" title="#img5">
+			</div>
+
+			<div id="img1" class="nivo-html-caption">The black jaguar is actually exactly the same as a regular jaguar except for its coloring; it's not a different species, or kind, of jaguar.</div>
+			<div id="img2" class="nivo-html-caption">Some jaguars get genes that cause them to have melanism, which means that they will have fur that is all black. About six in every 100 jaguars will be all black.</div>
+			<div id="img3" class="nivo-html-caption">The word 'jaguar' comes from the indigenous word 'yaguar', which means 'he who kills with one leap'.</div>
+			<div id="img4" class="nivo-html-caption">Jaguars used to be found from south-west USA, throughout South America to almost the far north in Argentina. Now, they’ve been virtually eliminated from half of their historic range. The jaguars’ stronghold is in Brazil – it may hold around half of the estimated 170,000 wild jaguars.</div>
+			<div id="img5" class="nivo-html-caption">Unlike many domestic cats, jaguars don’t avoid water. They often live near lakes, rivers and wetlands, and are confident swimmers, known to cross large rivers.</div>
+
+		</div>
+
+	</div>
+
+	<!----------------- Runs the Slideshow ------------------>
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('#slider').nivoSlider()	
+		});
+	</script>
+
+	<script language="text/javascript">
+		$(window).setTimeout(function() {
+			$("#slider-1").data("object").isPaused = false;
+			$("#slider-1").data("object").slideRun(1);
+	  	},
+  	 10000);
+ 	</script>
+
+	<footer>
+		&copy; Teddy Cormier Productions 
+
+		<script type="text/javascript">
+			document.write(new Date().getFullYear());
+		</script>
+	</footer>
+
+
+
+</body>
+</html>
